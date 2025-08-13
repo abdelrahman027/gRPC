@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//TRY ADDING COMMENT
 func Greeting(n string) {
 	fmt.Println("Hello", n)
 }

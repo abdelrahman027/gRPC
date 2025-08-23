@@ -1,0 +1,12 @@
+// package gRPC
+package main
+
+type Employee struct {
+	firstname string
+	jobtitle  string
+}
+
+func (emp Employee) employeeData() string {
+
+	return "First name is " + emp.firstname + " and he work as " + emp.jobtitle
+}

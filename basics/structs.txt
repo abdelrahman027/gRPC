@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+type Person struct {
+	firstname string
+	lastname  string
+	age       int
+}
+
+func (person Person) getFullName() string {
+	return person.firstname + " " + person.lastname
+}
+
+func main() {
+	p1 := Person{
+		firstname: "Abdelrahman",
+		lastname:  "saad",
+		age:       33,
+	}
+	emp1 := Employee{
+		firstname: "Ahmed",
+		jobtitle:  "accountant",
+	}
+	fmt.Println(p1.getFullName())
+	print(emp1.employeeData())
+}
